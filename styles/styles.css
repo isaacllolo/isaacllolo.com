@@ -57,13 +57,9 @@ header {
   color: #FFF;
 }
 .navbar .navbar-button a:hover {
-  color: #FFF;
-}
-.navbar .navbar-button:hover {
   color: #0EE6B7;
   transition: transform 0.5s;
 }
-
 .social-nav-buttons {
   display: flex;
   height: 2rem;

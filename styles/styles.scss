@@ -48,13 +48,15 @@ header{
           color: #FFF;
         }
         a:hover{
-          color:#FFF;
-        }
-      }
-      .navbar-button:hover{
-        color: #0EE6B7;
+          color: #0EE6B7;
         transition: transform 0.5s;
-      }
+        }
+        a:active{
+          color: #FFF;
+        }
+        a:link{
+          color: #FFF;
+        }
     }
    
 
