@@ -40,22 +40,11 @@ header{
           line-height: normal;
           transition: transform 0.5s;
           user-select: none;
-        a{
-          text-decoration: none;
-          user-select: none;
-        }
-        a:visited{
-          color: #FFF;
-        }
-        a:hover{
-          color: #0EE6B7;
-        transition: transform 0.5s;
-        }
-        a:active{
-          color: #FFF;
-        }
-        a:link{
-          color: #FFF;
+       
+        a:link, a:visited,  a:hover, a:active{
+        color: #fff;
+        text-decoration: none;
+        user-select: none;
         }
     }
    
