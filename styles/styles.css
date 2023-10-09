@@ -29,6 +29,8 @@ header {
   height: 1.563rem;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .navbar .navbar-button {
   list-style-type: none;
@@ -47,19 +49,14 @@ header {
      -moz-user-select: none;
           user-select: none;
 }
-.navbar .navbar-button a {
+.navbar .navbar-button a:link, .navbar .navbar-button a:visited, .navbar .navbar-button a:hover, .navbar .navbar-button a:active {
+  color: #fff;
   text-decoration: none;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-.navbar .navbar-button a:visited {
-  color: #FFF;
-}
-.navbar .navbar-button a:hover {
-  color: #0EE6B7;
-  transition: transform 0.5s;
-}
+
 .social-nav-buttons {
   display: flex;
   height: 2rem;
@@ -286,6 +283,11 @@ div[class^=last-work-image-] {
   justify-content: center;
 }
 
+.to-work-button-arrow {
+  width: 5.625vw;
+  height: 20;
+}
+
 .to-work-button-text {
   color: #0EE6B7;
   font-family: Poppins;
@@ -360,4 +362,78 @@ div[class^=last-work-image-] {
   line-height: normal;
   text-align: center;
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .navbar .navbar-button {
+    font-size: 2.5vw;
+  }
+  .home {
+    flex-direction: column;
+  }
+  .home .home-image-control-bar div[class$=buttons] {
+    margin-left: 5.25vw;
+  }
+  .home .home-text {
+    margin-top: 4rem;
+  }
+  .home .home-image {
+    position: relative;
+    width: 81.986vw;
+    height: 52vh;
+  }
+  .home .home-image-text .home-image-text-description-title, .home .home-image-text .home-image-text-description-text, .home .home-image-text .home-image-text-descritption-subtitle {
+    font-size: 2.333vw;
+  }
+  .experience {
+    height: auto;
+  }
+  .section-title {
+    font-size: 2.875vw;
+  }
+  .experience-gallery {
+    flex-direction: column;
+  }
+  .experience-gallery-item {
+    width: 71.61vw;
+    height: 50vh;
+  }
+  .exprience-gallery-item-title {
+    font-size: 3.25vw;
+  }
+  .last-work {
+    flex-direction: column;
+  }
+  .to-work-button-arrow {
+    width: 10vw;
+    height: 20;
+  }
+  .to-work-button-text {
+    font-size: 2vw;
+  }
+  div[class^=last-work-image-] {
+    width: 60.313vw;
+    height: 28.4375vh;
+    margin: 1vw;
+    order: 1;
+  }
+  #last-work-2 {
+    flex-direction: column-reverse;
+  }
+  #last-work-2 .last-work-image-3 {
+    order: 2;
+  }
+  #last-work-2 .last-content {
+    order: 2;
+  }
+  #last-work-2 .last-work-title {
+    text-align: left;
+  }
+  #last-work-2 .work-description {
+    text-align: left;
+  }
+  .footer #text-footer-1, .footer #footer-text-2, .footer #footer-text-3 {
+    font-size: 4.5vw;
+    text-align: center;
+  }
 }/*# sourceMappingURL=styles.css.map */
